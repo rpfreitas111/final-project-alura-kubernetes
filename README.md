@@ -9,9 +9,9 @@ Projeto final curso alura kubernetes.
 7. Construção do projeto.
 
 ### Motivação
-    Este projeto é uma forma de treinar tudo que pude aprender no curso da alura, Formação DevOps, que recomendo muito.  Todas as imagem  utilizadas serão da Formação DevOps porque a é recriar todas as   etapas do treinamento para melhor fixar o conhecimento. 
+    Este projeto é uma forma de treinar tudo que pude aprender no curso da alura, Formação DevOps, que recomendo muito.  Todas as imagem  utilizadas serão da Formação DevOps. 
 ### Definir escopo do projeto
-    A imagem da topologia a ser seguida está no diretório Desenho_Topologia.
+   
 ![topologia_kubernetes](https://github.com/rpfreitas111/final-project-alura-kubernetes/blob/main/Desenho_Topologia/Final-project-alura-kubernetes%20.jpg)
 
 ### Definir tecnologias a ser utilizada e estrutura básica
@@ -20,7 +20,7 @@ Projeto final curso alura kubernetes.
 * Linux mint ou ubuntu será o S.O utilizado para criar toda a estrutura
 * VirtualBox será nosso hypervisor 
 * minikube nossa cluster local para kubernetes
-* kubectl é a forma em linha de comando usado para interagir com o Kubernetes.
+* kubectl é a forma de CLI usada para interagir com o Kubernetes.
 ### Definições rápidas
 #### Git e GitHub
     O Git é um sistema de controle de versão VCS "Version Control Software". O Git ira nós ajudar a versionar os códigos da criação do nosso cluster. O GitHub é o local onde iremos salvar as versões do nosso projeto.
