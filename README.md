@@ -12,7 +12,7 @@ Projeto final curso alura kubernetes.
     Este projeto é uma forma de treinar tudo que pude aprender no curso da alura, Formação DevOps, que recomendo muito.  Todas as imagem  utilizadas serão da Formação DevOps porque a é recriar todas as   etapas do treinamento para melhor fixar o conhecimento. 
 ### Definir escopo do projeto
     A imagem da topologia a ser seguida está no diretório Desenho_Topologia.
-![topologia_kubernetes](https://github.com/rpfreitas111/final-project-alura-kubernetes/blob/main/Desenho_Topologia/Final-project-alura-kubernetes.jpg)
+![topologia_kubernetes](https://github.com/rpfreitas111/final-project-alura-kubernetes/blob/main/Desenho_Topologia/Final-project-alura-kubernetes%20.jpg)
 
 ### Definir tecnologias a ser utilizada e estrutura básica
 * Git será nossa ferramenta de vercionamento 
