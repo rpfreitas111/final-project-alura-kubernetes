@@ -10,7 +10,7 @@ Projeto final curso alura kubernetes.
 7. Criar o projeto.
 
 ### Motivação
-    Este projeto é uma forma de treinar tudo que pude aprender no curso da alura Formação DevOps, no qual recomendo muito. Todas as imagem utilizadas será do curso da alura pois a intensão e recriar todo o curso usando dos recursos ensinados. 
+    Este projeto é uma forma de treinar tudo que pude aprender no curso da alura, Formação DevOps, que recomendo muito.  Todas as imagem  utilizadas serão da Formação DevOps porque a é recriar todas as   etapas do treinamento para melhor fixar o conhecimento. 
 ### Definir escopo do projeto
     A imagem da topologia a ser seguida está no diretório **Desenho_Topologia**
 ### Definir tecnologias a ser utilizada e estrutura básica
