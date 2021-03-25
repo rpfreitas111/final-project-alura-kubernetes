@@ -1,0 +1,74 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-configmap
+data:
+  MYSQL_ROOT_PASSWORD: q1w2e3r4
+  MYSQL_DATABASE: empresa
+  MYSQL_PASSWORD: q1w2e3r4
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: db-noticia-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: db-noticias-svc
+spec:
+  type: ClusterIP
+  ports:
+    - port: 3306
+  selector:
+    db: db-noticias
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: db-noticias-statefulset
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        db: db-noticias
+      name: db-noticias
+    spec:
+      containers:
+        - name: db-noticias-containers
+          image: aluracursos/mysql-db:1
+          ports:
+            - containerPort: 3306
+          envFrom:
+            - configMapRef:
+                name: db-configmap
+          volumeMounts:
+            - name: database
+              mountPath: /var/lib/mysql
+          livenessProbe:
+            tcpSocket:
+              port: 3306
+            periodSeconds: 15
+            failureThreshold: 3
+            initialDelaySeconds: 20
+          readinessProbe:
+            tcpSocket:
+              port: 3306
+            periodSeconds: 10
+            failureThreshold: 5
+            initialDelaySeconds: 5
+      volumes:
+        - name: database  
+          persistentVolumeClaim:
+            claimName: db-noticia-pvc
+  selector:
+    matchLabels:
+      db: db-noticias
+  serviceName: db-noticias-svc
