@@ -12,7 +12,9 @@ Projeto final curso alura kubernetes.
 ### Motivação
     Este projeto é uma forma de treinar tudo que pude aprender no curso da alura, Formação DevOps, que recomendo muito.  Todas as imagem  utilizadas serão da Formação DevOps porque a é recriar todas as   etapas do treinamento para melhor fixar o conhecimento. 
 ### Definir escopo do projeto
-    A imagem da topologia a ser seguida está no diretório **Desenho_Topologia**
+    A imagem da topologia a ser seguida está no diretório Desenho_Topologia.
+    ![topologia_kubernetes](/Desenho_topologia/Final-project-alura-kubernetes.jpg)
+
 ### Definir tecnologias a ser utilizada e estrutura básica
 * Git será nossa ferramenta de vercionamento 
 * GitHub será o nosso repositório
